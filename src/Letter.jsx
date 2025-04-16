@@ -43,6 +43,7 @@ const LovePage = () => {
           style={noBtnStyle}
           className="no-btn"
           onMouseEnter={moveNoButton}
+          onClick={moveNoButton} // Thêm dòng này để hỗ trợ mobile
         >
           Không đâuu 😅
         </button>

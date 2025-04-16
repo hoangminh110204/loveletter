@@ -7,13 +7,13 @@ const LovePage = () => {
   const [showModal, setShowModal] = useState(false);
 
   const moveNoButton = () => {
-    const x = Math.floor(Math.random() * 80);
-    const y = Math.floor(Math.random() * 80);
+    const x = Math.floor(Math.random() * 100);
+    const y = Math.floor(Math.random() * 600);
     setNoBtnStyle({
       position: "absolute",
       left: `${x}%`,
       top: `${y}%`,
-      transition: "0.2s",
+      transition: "0.1s",
     });
     setHasMoved(true);
   };

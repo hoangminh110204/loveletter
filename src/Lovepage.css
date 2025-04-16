@@ -1,0 +1,136 @@
+/* Basic styles */
+.love-page {
+    text-align: center;
+    
+    font-family: Arial, sans-serif;
+    position: relative;
+    height: 100vh;
+    background-image: url('https://i.pinimg.com/736x/16/53/31/1653316e15fbf3e8e01fc27c79a1c2e6.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    margin-top: 15%;
+  }
+  
+  /* Button container */
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+  }
+  
+  .yes-btn, .no-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ff69b4;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .no-btn {
+    background-color: #aaa;
+    cursor: not-allowed;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 10px rgb(247, 244, 244);
+    max-width: 400px;
+    /* background-image: url('https://cdn2.fptshop.com.vn/unsafe/800x0/meme_tha_tim_5_bc3726d434.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden; */
+  }
+  img{
+    max-width: 400px;
+  }
+  
+  .modal-btn {
+    margin-top: 20px;
+    padding: 8px 16px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* For Mobile */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 1.8rem;
+    }
+  
+    .button-container {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .yes-btn, .no-btn {
+      padding: 8px 15px;
+      font-size: 16px;
+    }
+  }
+  
+  /* For Tablet */
+  @media (max-width: 1024px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    .button-container {
+      flex-direction: row;
+      gap: 20px;
+    }
+  
+    .yes-btn, .no-btn {
+      padding: 10px 20px;
+      font-size: 18px;
+    }
+  }
+  
+  /* For Desktop */
+  @media (min-width: 1025px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+  
+    .button-container {
+      flex-direction: row;
+      gap: 20px;
+    }
+  
+    .yes-btn, .no-btn {
+      padding: 10px 20px;
+      font-size: 18px;
+    }
+  }
+  

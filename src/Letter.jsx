@@ -13,7 +13,7 @@ const LovePage = () => {
       position: "absolute",
       left: `${x}%`,
       top: `${y}%`,
-      transition: "0.1s",
+      transition: "0.25s",
     });
     setHasMoved(true);
   };
